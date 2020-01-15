@@ -2,11 +2,6 @@ import {app,BrowserWindow} from 'electron';
 
 let browserWindow:BrowserWindow;
 
-function confirmEnd()
-{
-    console.log("electron stopped");
-
-}
 
 function createWindow()
 {
@@ -17,4 +12,3 @@ function createWindow()
 
 app.on("ready", createWindow)
 
-app.on("before-quit", confirmEnd);
